@@ -223,7 +223,7 @@ char mPieces[7 /* kind */][4 /* rotation */][5 /* horizontal blocks */][5 /* ver
 			{ 0, 0, 0, 0, 0 }
 		}
 	}
-}
+};
 
 
 // Displacement of the piece to the position where it is first drawnin the board when it is created. 
@@ -279,7 +279,7 @@ int mPiecesInitialPosition[7 /* kind */][4 /* rotation */][2 /* position */] =
 		{ -2, -3 },
 		{ -2, -2 }
 	},
-}
+};
 
 /*
 ======================================

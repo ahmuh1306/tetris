@@ -2,6 +2,14 @@
 #include "Board.h"
 
 
+Board::Board(Pieces *pPieces, int pScreenHeight)
+{
+	mScreenHeight = pScreenHeight;
+	mPieces = pPieces;
+	InitBoard();
+}
+
+
 void Board::InitBoard()
 {
 	for (int i = 0; i < BOARD_WIDTH; i++)

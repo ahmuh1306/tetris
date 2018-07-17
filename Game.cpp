@@ -1,6 +1,15 @@
 #include "stdafx.h"
 #include "Game.h"
 
+Game::Game(Board *pBoard, Pieces *pPieces, IO *pIO, int pScreenHeight)
+{
+	mScreenHeight = pScreenHeight;
+	mBoard = pBoard;
+	mPieces = pPieces;
+	mIO = pIO;
+	InitGame();
+}
+
 int Game::GetRand(int pA, int pB)
 {
 	return rand() % (pB - pA + 1) + pA;
@@ -10,7 +19,7 @@ void Game::InitGame()
 {
 	srand((unsigned int)time(NULL));
 	mPiece = GetRand(0, 6);
-	mRotatin = GetRand(0, 3);
+	mRotation = GetRand(0, 3);
 	mPosX = (BOARD_WIDTH / 2) + mPieces->GetXInitalPosition(mPiece, mRotation);
 	mPosY = mPieces->GetYInitalPosition(mPiece, mRotation);
 	mNextPiece = GetRand(0, 6);

@@ -1,7 +1,7 @@
 #pragma once
 
 #include <SDL.h>
-
+#include <sdl_gfxprimitives.h>
 enum color { BLACK, RED, GREEN, BLUE, CYAN, MAGENTA, YELLOW, WHITE, COLOR_MAX };
 
 class IO
