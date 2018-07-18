@@ -43,7 +43,7 @@ void Game::DrawPiece(int pX, int pY, int pPiece, int pRotation)
 	color mColor;
 	int mPixelsX = mBoard->GetXPosInPixels(pX);
 	int mPixelsY = mBoard->GetYPosInPixels(pY);
-	for (int i = 0, i < PIECE_BLOCKS; i++)
+	for (int i = 0; i < PIECE_BLOCKS; i++)
 	{
 		for (int j = 0; j < PIECE_BLOCKS; j++)
 		{

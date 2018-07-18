@@ -93,9 +93,9 @@
       <AdditionalIncludeDirectories>C:\Users\ahmad\Documents\Personal\Coding\C++\SDL\SDL_GfxPrimitives;C:\Users\ahmad\Documents\Personal\Coding\C++\SDL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <SubSystem>Console</SubSystem>
+      <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Users\ahmad\Documents\Personal\Coding\C++\SDL\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Users\ahmad\Documents\Personal\Coding\C++\SDL\SDL_GfxPrimitives;C:\Users\ahmad\Documents\Personal\Coding\C++\SDL\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>SDL.lib;SDL_GfxPrimitives_Static.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
